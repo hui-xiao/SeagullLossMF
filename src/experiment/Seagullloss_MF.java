@@ -442,7 +442,7 @@ public class Seagullloss_MF {
 			FileChannel inputChannel = null;
 			FileChannel outputChannel = null;
 			try {
-				inputChannel = new FileInputStream("D:\\two\\SeagullMF - 008\\SeagullMF - 008\\result.txt").getChannel();
+				inputChannel = new FileInputStream(".\\result.txt").getChannel();
 				outputChannel = new FileOutputStream(tempRecordResultFile).getChannel();
 				outputChannel.transferFrom(inputChannel, 0, inputChannel.size());
 			} finally {
